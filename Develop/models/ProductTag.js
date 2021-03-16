@@ -15,17 +15,15 @@ ProductTag.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: Product,
+        model: "product",
         key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
       }
     },
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: Tag,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
+        model: "tag",
+        key: 'id'
       }
     }
   },

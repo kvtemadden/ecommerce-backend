@@ -38,9 +38,8 @@ Product.init(
     category_id: {
       type: DataTypes.INTEGER,  
       references: {
-        model: Category,
-        key: 'id',
-        deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
+        model: "category",
+        key: 'id'
       }
     }
   },
